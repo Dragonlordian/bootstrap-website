@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss:assets/css"
+    "compile:sass": "sass --watch scss:assets/css",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 5500\" \"open http://localhost:5500/\""
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +14,9 @@
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
     "sass": "^1.81.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "http-server": "^14.1.1"
   }
 }
