@@ -1,0 +1,64 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.what-we-do {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: $primary;
+    min-height: 90vh;
+    font-weight: 100;
+    font-family: $font-third;
+
+    .container-btn{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 70%;
+    }
+
+    .container{
+        width: 85%;
+    }
+
+    .service-title1 {
+        @include responsive-font(1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem);
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .service-text1 {
+        @include responsive-font(1.25rem, 1.5rem, 2rem, 2.25rem, 2.5rem, 3rem);
+        line-height: 1.5;
+        font-weight: 100;
+
+        b {
+            font-weight: bold;
+        }
+    }
+
+    .accordion {
+        .accordion-header {
+            cursor: pointer;
+            .accordion-title{
+                border-bottom: 0.1rem solid white;
+            }
+        }
+
+        .accordion-body {
+            padding: 0;
+            .text-grey {
+                @include responsive-font(0.875rem, 0.9rem, 1rem, 1.125rem, 1.25rem, 1.375rem);
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+  
+
+

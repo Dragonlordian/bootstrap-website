@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>News Article</title>
+</head>
+<body>
+
+    <nav class="navbar fixed-top bg-transparent">
+        <div class="container-fluid">
+            <a class="back-btn" href="index.html"> < Back </a>
+            <a class="navbar-brand text-white" href="index.html"><img src="./assets/arts/logo.svg" alt="logo" /></a>
+        </div>
+    </nav>
+    
+    <section class="news-article-info py-5 text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="article-title mb-3"></h2>
+              <img src="" alt="Article Image" class="img-fluid shadow-sm mb-4">
+              <p class="article-content"></p>
+              <div class="article-metadata mt-3">
+                  <span class="author-name"></span> | 
+                  <span class="publication-date"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+    <script>
+        async function render() {
+            const response = await fetch('http://localhost:5500/script/data/news.json');
+            const newsData = await response.json();
+
+            const params = new URLSearchParams(window.location.search);
+            const articleId = params.get('id');
+
+            const article = newsData.data.find(a => a.id === articleId);
+
+            if (article) {
+                document.querySelector('.article-title').textContent = article.title;
+                document.querySelector('.img-fluid').src = article.image_path;
+                document.querySelector('.article-content').textContent = article.content;
+                document.querySelector('.author-name').textContent = `By ${article.author}`;
+                document.querySelector('.publication-date').textContent = article.publication_date;
+            } else {
+                document.querySelector('.article-title').textContent = "Article Not Found";
+                document.querySelector('.article-content').textContent = "Sorry, we couldn't find the article you're looking for.";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            render();
+        });
+    </script>
+</body>
+</html>

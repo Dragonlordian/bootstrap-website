@@ -1,0 +1,77 @@
+{
+    "data": [
+      {
+        "id": "1",
+        "name": "Jhon Doe",
+        "photo_path": "../assets/arts/artist1.png",
+        "bio": "A talented multi-instrumentalist blending traditional melodies with modern electronic arrangements. His music is filled with expression and emotion, inspired by the cultural heritage of his homeland."
+      },
+      {
+        "id": "2",
+        "name": "Liam Walker",
+        "photo_path": "../assets/arts/artist2.png",
+        "bio": "A guitarist and vocalist known for his vibrant and energetic performances. His songs echo elements of classic rock and indie-pop, creating a unique atmosphere."
+      },
+      {
+        "id": "3",
+        "name": "Emily Carter",
+        "photo_path": "../assets/arts/artist3.png",
+        "bio": "A soulful singer with a powerful voice, performing songs that reflect deep emotions and heartfelt stories. Her music bridges contemporary and timeless styles."
+      },
+      {
+        "id": "4",
+        "name": "Sophia Turner",
+        "photo_path": "../assets/arts/artist4.png",
+        "bio": "An innovative songwriter and pianist, known for her poetic lyrics and intricate compositions that fuse classical and contemporary influences."
+      },
+      {
+        "id": "5",
+        "name": "Benjamin Davis",
+        "photo_path": "../assets/arts/artist5.png",
+        "bio": "A dynamic percussionist and producer, bringing rhythm and texture to life through his skillful drumming and innovative sound design."
+      },
+      {
+        "id": "6",
+        "name": "James Martin",
+        "photo_path": "../assets/arts/artist6.png",
+        "bio": "A jazz saxophonist and composer, captivating audiences with his improvisational prowess and deep connection to the roots of jazz."
+      },
+      {
+        "id": "7",
+        "name": "William Garcia",
+        "photo_path": "../assets/arts/artist7.png",
+        "bio": "A versatile bassist whose grooves form the backbone of many genres, from funk and soul to rock and jazz."
+      },
+      {
+        "id": "8",
+        "name": "Ava Wilson",
+        "photo_path": "../assets/arts/artist8.png",
+        "bio": "A passionate violinist blending classical technique with modern genres, creating emotive and cinematic performances."
+      },
+      {
+        "id": "9",
+        "name": "Olivia Brown",
+        "photo_path": "../assets/arts/artist9.png",
+        "bio": "A rising star in the world of folk music, her heartfelt storytelling and melodic guitar work resonate with listeners everywhere."
+      },
+      {
+        "id": "10",
+        "name": "Mia Rodriguez",
+        "photo_path": "../assets/arts/artist10.png",
+        "bio": "A charismatic pop singer and dancer, delivering vibrant performances with catchy hooks and energetic rhythms."
+      },
+      {
+        "id": "11",
+        "name": "Noah Smith",
+        "photo_path": "../assets/arts/artist11.png",
+        "bio": "A talented DJ and electronic music producer, known for his innovative beats and ability to ignite any dance floor."
+      },
+      {
+        "id": "12",
+        "name": "Charlotte Moore",
+        "photo_path": "../assets/arts/artist12.png",
+        "bio": "A classical cellist whose expressive performances and contemporary arrangements breathe new life into traditional compositions."
+      }
+    ]
+}
+  

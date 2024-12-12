@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "title": "Olivia Brown's Highly Anticipated Glastonbury 2024 Performance",
+            "image_path": "./assets/arts/news3.png",
+            "content": "Olivia Brown is gearing up for one of the most highly anticipated performances at Glastonbury 2024. Fans are excited as she promises an unforgettable show with a mix of her greatest hits and new music.",
+            "author": "Emily Roberts",
+            "publication_date": "2024-12-08"
+        },
+        {
+            "id": "2",
+            "title": "Ava Wilson Teases Her New Album for 2024",
+            "image_path": "./assets/arts/news2.png",
+            "content": "Ava Wilson has dropped hints about her upcoming album, set for release in 2024. The singer-songwriter shared a cryptic post on social media, building excitement among her loyal fans who are eager to hear her latest work.",
+            "author": "James Miller",
+            "publication_date": "2024-12-07"
+        },
+        {
+            "id": "3",
+            "title": "Liam Walker Announces His 2024 World Tour",
+            "image_path": "./assets/arts/news1.png",
+            "content": "Liam Walker has announced his 2024 world tour, which will take him to major cities across the globe. The tour will promote his latest album, and fans are already planning their tickets for his much-awaited shows.",
+            "author": "Sophia Williams",
+            "publication_date": "2024-12-06"
+        }
+    ]
+}

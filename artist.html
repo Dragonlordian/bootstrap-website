@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar fixed-top bg-transparent">
+        <div class="container-fluid">
+            <a class="back-btn" href="index.html"> < Back </a>
+            <a class="navbar-brand text-white" href="index.html"><img src="./assets/arts/logo.svg" alt="logo" /></a>
+        </div>
+    </nav>
+    
+    <section class="artist-info py-5 text-white">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+              <img src="" alt="Artist Photo" class="img-fluid rounded-circle shadow-sm">
+            </div>
+            <div class="col-md-8">
+              <h2 class="artist-name mb-3"></h2>
+              <p class="artist-bio"></p>
+              <ul class="social-links list-inline mt-3">
+                <li class="list-inline-item">
+                  <a href="#" class="btn">
+                    <img src="./assets/arts/spotify-color-svgrepo-com.svg" class="platform-link-img" alt="">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn">
+                    <img src="./assets/arts/soundcloud-color-svgrepo-com.svg" class="platform-link-img" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+
+
+
+    <script>
+        async function render(){
+            const response = await fetch('http://localhost:5500/script/data/artists.json')
+            const artistsData = await response.json();
+
+            const params = new URLSearchParams(window.location.search);
+            const artistId = params.get('id');
+
+    
+            const artist = artistsData.data.find(a => a.id === artistId);
+
+
+            if (artist) {
+                document.querySelector('.artist-name').textContent = artist.name;
+                document.querySelector('.img-fluid').src = artist.photo_path;
+                document.querySelector('.artist-bio').textContent = `${artist.bio}`;
+            } else {
+                document.querySelector('.artist-name').textContent = "Artist Not Found";
+                document.querySelector('.artist-bio').textContent = "Sorry, we couldn't find the artist you're looking for.";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () =>{
+            render()
+        })
+    </script>
+</body>
+</html>

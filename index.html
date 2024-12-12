@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Lable</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+
+    <nav class="navbar fixed-top bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#"><img src="./assets/arts/logo.svg" alt="logo" /></a>
+
+            <button class="navbar-toggler border-0 shadow-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <a class="nav-menu-btn" aria-label="Toggle navigation">
+                    <i class="nav-menu-btn-line nav-menu-btn-line-1"></i>
+                    <i class="nav-menu-btn-line nav-menu-btn-line-2"></i>
+                    <i class="nav-menu-btn-line nav-menu-btn-line-3"></i>
+                </a>
+            </button>
+
+            <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-white">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            
+                <div class="offcanvas-body d-flex justify-content-center align-items-center flex-column text-white">
+                    <a class="menu-item" href="#main">Home</a>
+                    <a class="menu-item" href="#artists">Artist</a>
+                    <a class="menu-item" href="#news">News</a>
+                    <a class="menu-item" href="#faq">FAQ</a>                
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="main" class="intro-section">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 intro">
+                    <h1 class="display-2 text-white">
+                        <div class="row">
+                            <span class="display-2--intro text-focus-in">Unique</span>
+                            <span class="display-2--introSecond text-focus-in">Forever.</span>
+                            <span class="display-2--desc text-focus-in">Creative solutions for music creators</span>
+                        </div>
+                    </h1>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 intro">
+                    <div class="row text-white album-showcase-cont">
+                        <div class="album-showcase">
+                            <span class="note text-flicker-in-glow">Out Now</span>
+                            <img class="album-cover rounded shadow-lg border border-secondary" src="./assets/arts/main-cover.webp" alt="Ariana Grande Album Cover"/>
+                            <span class="album-title">Emily Smith - Lose</span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="artists" class="artists-section p-0">
+        <div class="w-100">
+            <div class="d-none d-md-flex row row-cols-1 row-cols-md-3 row-cols-lg-4 g-0" id="artists-list"></div>
+    
+            <div id="carouselExampleIndicators" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+                <div class="carousel-inner" id="artists-slides">
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+      
+    <section id="news" class="news-section py-5">
+        <div class="container-btn">
+            <div class="arrow-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <p class="news-title1 text-bold text-uppercase">
+                        News
+                    </p>
+                    <h2 class="news-text1">
+                        News of <b>tomorrow</b> = our musicians + trending stories + inspiration
+                    </h2>
+                </div>
+            </div>
+    
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="news-card">
+                        <a href="http://localhost:5500/news.html?id=1" class="news-card__link">
+                            <img src="./assets/arts/news3.png" 
+                                alt="" 
+                                class="news-card__image">
+                            <div class="news-card__body">
+                                <div class="news-card__date">
+                                    <span class="date__month">12</span>
+                                    <span class="date__day">08</span>, 
+                                    <span class="date__year">2024</span>
+                                </div>
+                                <h5 class="news-card__title">
+                                    Olivia Brown's Highly Anticipated Glastonbury 2024 Performance
+                                </h5>
+                                <p class="news-card__read-more">Read More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <div class="news-card">
+                        <a href="http://localhost:5500/news.html?id=2" class="news-card__link">
+                            <img src="./assets/arts/news2.png" 
+                                alt="" 
+                                class="news-card__image">
+                            <div class="news-card__body">
+                                <div class="news-card__date">
+                                    <span class="date__month">12</span>
+                                    <span class="date__day">07</span>, 
+                                    <span class="date__year">2024</span>
+                                </div>
+                                <h5 class="news-card__title">
+                                    Ava Wilson Teases Her New Album for 2024
+                                </h5>
+                                <p class="news-card__read-more">Read More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-4">
+                    <div class="news-card">
+                        <a href="http://localhost:5500/news.html?id=3" class="news-card__link">
+                            <img src="./assets/arts/news1.png" 
+                                 alt="" 
+                                 class="news-card__image">
+                            <div class="news-card__body">
+                                <div class="news-card__date">
+                                    <span class="date__month">12</span>
+                                    <span class="date__day">06</span>, 
+                                    <span class="date__year">2024</span>
+                                </div>
+                                <h5 class="news-card__title">
+                                    Liam Walker Announces His 2024 World Tour
+                                </h5>
+                                <p class="news-card__read-more">Read More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <hr class="text-white my-4" />
+        </div>
+    </section>
+    
+    
+
+    <section id="faq" class="what-we-do">
+        <div class="container-btn">
+            <div class="arrow-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8">
+              <p class="service-title1 text-bold text-uppercase">
+                What we do
+              </p>
+              <h2 class="service-text1">
+                Crafting the sound of <b>tomorrow</b> = producing + recording + inspiring
+              </h2>
+            </div>
+          </div>
+          <div class="row services-grid accordion">
+            <div class="col-lg-3 col-md-6 mb-4 service-block">
+              <div class="accordion-header d-none d-lg-flex">
+                <h3 class="accordion-title">Production</h3>
+              </div>
+              <div class="accordion-header d-lg-none" data-bs-toggle="collapse" data-bs-target="#prod">
+                <h3 class="accordion-title">Production</h3>
+              </div>
+              <div id="prod" class="accordion-collapse collapse d-lg-block">
+                <div class="accordion-body">
+                  <p class="text-grey">Recording</p>
+                  <p class="text-grey">Mixing</p>
+                  <p class="text-grey">Mastering</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 service-block">
+              <div class="accordion-header d-none d-lg-flex">
+                <h3 class="accordion-title">Management</h3>
+              </div>
+              <div class="accordion-header d-lg-none" data-bs-toggle="collapse" data-bs-target="#prom">
+                <h3 class="accordion-title">Management</h3>
+              </div>
+              <div id="prom" class="accordion-collapse collapse d-lg-block">
+                <div class="accordion-body">
+                  <p class="text-grey">Career Guidance</p>
+                  <p class="text-grey">Promotion</p>
+                  <p class="text-grey">Scheduling</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 service-block">
+              <div class="accordion-header d-none d-lg-flex">
+                <h3 class="accordion-title">Distribution</h3>
+              </div>
+              <div class="accordion-header d-lg-none" data-bs-toggle="collapse" data-bs-target="#distr">
+                <h3 class="accordion-title">Distribution</h3>
+              </div>
+              <div id="distr" class="accordion-collapse collapse d-lg-block">
+                <div class="accordion-body">
+                  <p class="text-grey">Streaming Platforms</p>
+                  <p class="text-grey">Physical Media</p>
+                  <p class="text-grey">Licensing</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 service-block">
+              <div class="accordion-header d-none d-lg-flex">
+                <h3 class="accordion-title">Live Events</h3>
+              </div>
+              <div class="accordion-header d-lg-none" data-bs-toggle="collapse" data-bs-target="#live">
+                <h3 class="accordion-title">Live Events</h3>
+              </div>
+              <div id="live" class="accordion-collapse collapse d-lg-block">
+                <div class="accordion-body">
+                  <p class="text-grey">Concerts</p>
+                  <p class="text-grey">Festivals</p>
+                  <p class="text-grey">Virtual Events</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5" style="background-color: #111; color: #fff;">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-md-4">
+                    <h5 class="text-uppercase footer-title">About Echo Records</h5>
+                    <p class="footer-text">
+                        Echo Records is a leading music label offering creative solutions for music creators. From music production to artist management, we help musicians shine.
+                    </p>
+                </div>
+    
+                <div class="col-md-2">
+                    <h5 class="text-uppercase footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#main" class="text-white text-decoration-none crs-anim-btn">
+                                <span class="crs-anim-btn-text footer-text-btn">Home</span>
+                                <span class="crs-anim-btn-line"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="text-white text-decoration-none crs-anim-btn">
+                                <span class="crs-anim-btn-text footer-text-btn">What We Do</span>
+                                <span class="crs-anim-btn-line"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news" class="text-white text-decoration-none crs-anim-btn">
+                                <span class="crs-anim-btn-text footer-text-btn">News</span>
+                                <span class="crs-anim-btn-line"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-white text-decoration-none crs-anim-btn">
+                                <span class="crs-anim-btn-text footer-text-btn">Contact Us</span>
+                                <span class="crs-anim-btn-line"></span>
+                            </a>
+                        </li>                        
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <h5 class="text-uppercase footer-title">Contact Us</h5>
+                    <p class="footer-text">123 Music Lane, New York, NY 10001</p>
+                    <p class="footer-text">info@echorecords.com</p>
+                    <p class="footer-text">+1 234 567 890</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="text-uppercase footer-title">newsletter</h5>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <a class="text-white text-decoration-none crs-anim-btn">
+                            <span class="crs-anim-btn-text footer-text-btn">Subscribe</span>
+                            <span class="crs-anim-btn-line"></span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+    
+            <hr class="text-white my-4" />
+  
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-6">
+                    <p class="mb-0 footer-text">© 2024 Echo Records. All rights reserved.</p>
+                </div>
+                <div class="col-md-1 text-md-end">
+                    <a href="#" class="text-white und-anim-btn text-decoration-none">Facebook<i class="und-anim-btn-line"></i> </a>
+                    <a href="#" class="text-white und-anim-btn text-decoration-none">Twitter<i class="und-anim-btn-line"></i> </a>
+                    <a href="#" class="text-white und-anim-btn text-decoration-none">Instagram<i class="und-anim-btn-line"></i></a>
+                </div>
+            </div>
+
+            <img class="logo" src="./assets/arts/logo-text.svg" />
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

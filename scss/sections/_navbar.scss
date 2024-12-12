@@ -1,0 +1,52 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.navbar{
+
+    .container-fluid{
+        width: 90%;
+    }
+
+    .back-btn{
+        text-decoration: none;
+        color: white;
+        font-family: $font-third;
+        font-weight: 300;
+        @include responsive-font(1rem, 1.1rem, 1.2rem, 1.3rem, 1.4rem, 1.6rem);
+    }
+
+    .sidebar{
+        background-color: rgba($color: $primary, $alpha: 0.15);
+        backdrop-filter: blur(1rem);
+
+        .offcanvas-header{
+            border-bottom: 1px solid white;
+            .offcanvas-title{
+                font-family: $font-third;
+                font-weight: 100;
+            }
+        }
+    
+        .offcanvas-body{
+            .menu-item{
+                @include responsive-font(3rem, 3rem, 3rem, 3rem, 3rem, 3rem);
+                font-family: $font-third;
+                font-weight: 100;
+                text-decoration: none;
+                color: white;
+                
+            }
+    
+            .menu-item:hover{
+                color: rgb(165, 165, 165);
+            }
+        }
+    }
+
+    button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    
+}
+

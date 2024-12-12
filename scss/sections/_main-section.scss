@@ -1,0 +1,85 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.intro-section {
+    height: 100vh;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 0;
+    width: 100%;
+
+    @include media-breakpoint-only(xs) {
+        padding: 5rem 1rem;
+    }
+
+    @include media-breakpoint-only(sm) {
+        padding: 6rem 1rem;
+    }
+
+    @include media-breakpoint-only(md) {
+        padding: 7rem 2rem;
+    }
+
+    @include media-breakpoint-only(lg) {
+        padding: 10rem 3rem;
+    }
+
+    @include media-breakpoint-only(xl) {
+        padding: 12rem 4rem;
+    }
+
+    @include media-breakpoint-only(xxl) {
+        padding: 12rem 4rem;
+    }
+
+    @media (max-height: 384px) {
+        padding: 1rem 1rem;  
+    }
+}
+
+.album-showcase-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .note {
+        font-family: $font-secondary;
+        font-weight: 400;
+        @include responsive-font(0.85rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2.3rem);
+    }
+
+    .album-showcase {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        max-width: 100%;
+        width: 100%; 
+
+        .album-cover {
+            width: 100%;
+            max-width: 350px; 
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid $gray-600;
+            @include responsive-image-padding(1rem, 1.5rem, 2rem, 2.5rem, 3rem);
+        }
+
+        .album-title {
+            font-family: $font-secondary;
+            font-weight: 400;
+            @include responsive-font(1rem, 1.2rem, 1.4rem, 1.6rem, 1.8rem, 2rem);
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+}

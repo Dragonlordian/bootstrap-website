@@ -1,0 +1,183 @@
+@use '../custom' as *;
+
+.nav-menu-btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer; 
+
+    .nav-menu-btn-line {
+        width: 100%;
+        height: 0.3rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.3rem;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 0;
+    }
+
+    .nav-menu-btn-line-1 {
+        top: 0;
+    }
+
+    .nav-menu-btn-line-2 {
+        top: 0.8rem; 
+    }
+
+    .nav-menu-btn-line-3 {
+        bottom: 0;
+    }
+
+    &:hover {
+        .nav-menu-btn-line-1 {
+            top: 0.8rem; 
+            opacity: 0;
+        }
+
+        .nav-menu-btn-line-2 {
+            transform: rotate(180deg);
+        }
+
+        .nav-menu-btn-line-3 {
+            bottom: 0.8rem;
+            opacity: 0;
+        }
+    }
+}
+
+
+.und-anim-btn{
+    color: white;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    cursor: pointer; 
+
+    .und-anim-btn-line{
+        background-color: white;
+        width: 100%;
+        height: 0.1rem;
+        transition: all 0.4s ease;
+    }
+
+    &:hover{
+        .und-anim-btn-line{
+            width: 40%;
+        }
+    }
+}
+
+.crs-anim-btn {
+    color: white;
+    height: 2rem;
+    display: inline-flex; 
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    .crs-anim-btn-text {
+        position: relative;
+        z-index: 1;
+    }
+
+    .crs-anim-btn-line {
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0.1rem;
+        width: 0%;
+        transition: width 0.4s ease;
+    }
+
+
+    &:hover {
+        .crs-anim-btn-line {
+            width: 100%;
+        }
+    }
+}
+
+
+.arrow-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 1vw; /* Изменённые размеры для большей адаптивности */
+        height: 1vw;
+        border-bottom: 5px solid white;
+        border-right: 5px solid white;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: arrow-btn-anim 1.5s infinite;
+    }
+
+    span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+
+    span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+
+    @keyframes arrow-btn-anim {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-10px, -10px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+    }
+
+    @media (max-width: 1200px) { 
+        span {
+            width: 2vw;
+            height: 2vw;
+        }
+    }
+
+    @media (max-width: 992px) { 
+        span {
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+
+    @media (max-width: 768px) { 
+        span {
+            width: 4vw;
+            height: 4vw;
+        }
+    }
+
+    @media (max-width: 576px) {
+        span {
+            width: 6vw;
+            height: 6vw;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

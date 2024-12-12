@@ -1,0 +1,15 @@
+@use 'custom';
+
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+@use 'sections/navbar';
+@use 'sections/main-section';
+@use 'sections/artists';
+@use 'sections/what-we-do';
+@use 'sections/news';
+@use 'sections/footer';
+@use 'sections/arist-profile';
+@use 'sections/news-articles'

@@ -1,0 +1,30 @@
+@use '../custom' as *;
+@use './mixins' as *;
+
+.display-2 {
+    height: 100%;
+
+    .row {
+        height: 50%;
+        width: 70%;
+        padding-bottom: 5rem;
+    }
+
+    &--intro {
+        @include responsive-font(4rem, 5rem, 6rem, 8rem, 9rem, 10rem);
+        font-family: $font-primary;
+        font-weight: 600;
+    }
+
+    &--introSecond {
+        @include responsive-font(2.5rem, 3rem, 4rem, 5rem, 6rem, 7rem);
+        font-family: $font-secondary;
+        font-weight: 400;
+    }
+
+    &--desc {
+        @include responsive-font(0.9rem, 1rem, 1.2rem, 1.6rem, 1.8rem, 2rem);
+        font-family: $font-secondary;
+        font-weight: 400;
+    }
+}

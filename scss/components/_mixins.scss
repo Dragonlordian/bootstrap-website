@@ -1,0 +1,64 @@
+@use '../custom' as *;
+
+@mixin responsive-image{
+  width: 80%; 
+  height: auto;
+  max-width: 80%;
+}
+
+@mixin responsive-image-padding($extra-small: 0.5rem, $small: 1rem, $medium: 2rem, $large: 3rem, $extra-large: 4rem) {
+  padding: $extra-small;
+
+  @include media-breakpoint-only(xs) {
+    padding: $small;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding: $small;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding: $medium;
+  }
+
+  @include media-breakpoint-only(lg) {
+    padding: $large;
+  }
+
+  @include media-breakpoint-only(xl) {
+    padding: $extra-large;
+  }
+
+  @include media-breakpoint-only(xxl) {
+    padding: $extra-large;
+  }
+}
+
+
+
+@mixin responsive-font($mobile,$big-mobile,$tablet,$laptop,$desctop,$big-desctop) {
+  
+    @include media-breakpoint-only(xs) {
+        font-size: $mobile;
+    }
+    
+    @include media-breakpoint-only(sm) {
+      font-size: $big-mobile;
+    }
+
+    @include media-breakpoint-only(md) {
+      font-size: $tablet;
+    }
+
+    @include media-breakpoint-only(lg) {
+      font-size: $laptop;
+    }
+
+    @include media-breakpoint-only(xl) {
+      font-size: $desctop;
+    }
+
+    @include media-breakpoint-only(xxl) {
+      font-size: $big-desctop;
+    }
+}

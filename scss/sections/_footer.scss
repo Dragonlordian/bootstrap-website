@@ -1,0 +1,26 @@
+@use '../custom' as *;
+
+.footer{
+    font-family: $font-third;
+    font-weight: 200;
+    min-height: 70vh;
+    
+    .footer-title{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+    .footer-text{
+        font-size: 1rem;
+        color: #bbb;
+    }
+
+    .footer-text-btn{
+        color: #fff;
+    }
+
+    .logo{
+        width: 25vw;
+    }
+}

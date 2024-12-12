@@ -1,0 +1,42 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.artists-section{
+    background-color: $secondary;
+    
+    .card{
+        text-decoration: none;
+        border: 0;
+    }
+    .artist-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        box-shadow: none;
+        filter: grayscale(100%);
+        transition: all 0.3s ease;
+    }
+
+    .artist-card:hover{
+        filter: grayscale(0%);
+    }
+
+    .card-body {
+        position: relative;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .carousel-item {
+        transition: transform 0.4s ease-in-out;
+    }
+}
+
+
