@@ -34,7 +34,7 @@
       
     <script>
         async function render() {
-            const response = await fetch('http://localhost:5500/script/data/news.json');
+            const response = await fetch('/script/data/news.json');
             const newsData = await response.json();
 
             const params = new URLSearchParams(window.location.search);

@@ -12683,7 +12683,7 @@ textarea.form-control-lg {
   padding: 1rem;
 }
 .artists-section .carousel-item {
-  transition: transform 0.4s ease-in-out; /* Ускорение анимации до 0.3 секунды */
+  transition: transform 0.4s ease-in-out;
 }
 
 .what-we-do {
