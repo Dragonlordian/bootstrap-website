@@ -4,7 +4,7 @@ async function renderArtists() {
     const artistsList = document.getElementById('artists-list')
     const artistsSlides = document.getElementById('artists-slides')
 
-    const response = await fetch('/script/data/artists.json')
+    const response = await fetch('./script/data/artists.json')
     const artistsData = await response.json();
 
     artistsData.data.forEach((artist,i) => {
